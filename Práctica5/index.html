@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Práctica5</title>
+  </head>
+
+  <body>
+    <h1>Formularios (INPUTS)</h1>
+    <!-- es recomendable que todo quede dentro de la etiqueta form -->
+    <form action="">
+
+        <!-- ejemplo de lo que se puede realizar con TYPE="TEXT" -->
+        <label for="Nombre:">Nombre:</label><input id="Nombre:" value="value" type="text">
+        <label for="Nombre:">Nombre:</label><input id:="Nombre:" placeholder="etiqueta place holder" type="text" required>
+        <!-- el atributo value es para agregar ya un elemento dentro del input -->
+        <!-- el atributo placeholder no afecta el contenido del input -->
+        <!-- el atributo required agrega la obligacioón de llenar ese input -->
+
+
+        <label for="">Apellido:</label><input type="text" minlength="3" maxlength=" 5" >
+        <!-- con la etiqueta minleght es para darle un mínimo de caracateres en el input -->
+        <!-- con la etiqueta maxlenght damos un máximo de caracteres en el input -->
+
+        <br>
+       
+ <br>
+        <!-- EJEMPLOS DE DIVERSOS TYPYES -->
+        <label for="password">password: </label><input id="password" type="password">
+        <label for="Teléfono">Teléfono</label> <input id="Teléfono" type="number" min="4" max="10" >
+        <!-- la etiqueta (min) para darle un mínimo de números-->
+        <!-- la etiqueta (max) para darel un máximo de nùmeros -->
+<br>
+<h2>Selecciona una opción</h2>
+<!-- type=radio es para agregar un circulo, la etiqueta checked value es para en cuanto arrancquemos el programa ya aparezca marcado un radio -->
+<input type="radio" name="sexo" checked value="Masculino">Masculino
+<input type="radio" name="sexo" value="Femenino">Femenino
+<br>
+<br>
+<input checked type="checkbox" value="opcionˀ1"> opción1
+<input type="checkbox" value="opción2"> opción2
+<input type="checkbox" value="opción3"> opción3
+<input type="checkbox" value="opción4"> opción4
+<br>
+<br>
+<!-- EJEMPLOS DE TYPE DATE -->
+<label for="">Seleccione una fecha</label><input type="date" min="2020-01-01" max="2020-12-31" value="2020-01-17">
+<label for=""></label>Seleccione un mes<input min="2019-07" max="2020-12" type="month">
+<br>
+<br>
+<!-- EJEMPLOS DE TYPE COLORS -->
+<label for="">Selecciona un color</label><input type="color" name="" id="">
+<br>
+<br>
+<label for="">Rango:</label><input type="range" name="" id="">
+<br>
+<br>
+<!-- EJEMPLOS DE SELECT PARA SOLO DARLE ALGUNAS OPCIONES AL CLIENTE  -->
+<label for="">Selecciona una opción</label>
+<select name="" id="">
+    <option selected value="">--Selecciona--</option>
+    <option value="CH">CH</option>
+    <option value="M">M</option>
+    <option value="G">G</option>
+    <option value="EG">EG</option>
+</select>
+
+<label for="">Selecciona una opción</label>
+<select disabled name="" id="">
+    <!-- el atributo disable ayuda apagar la un select -->
+    <option selected value="">--Selecciona--</option>
+    <option value="CH">CH</option>
+    <option value="M">M</option>
+    <option value="G">G</option>
+    <option value="EG">EG</option>
+</select>
+
+
+
+
+<br>
+<br>
+        <label for="">E-mail</label><input type="email">
+        <input  type="submit" value=" boton submit">
+    </form>
+  </body>
+</html>
